@@ -16,7 +16,7 @@ MedSafe AI is a modern, responsive web application built with Streamlit and powe
 ## 🛠️ Technology Stack
 
 *   **Frontend**: Python / [Streamlit](https://streamlit.io/)
-*   **Styling**: Custom flex-box HTML and CSS (Apple-Like UI)
+*   **Styling**: Custom flex-box HTML and CSS 
 *   **AI Engine**: [Google GenAI](https://pypi.org/project/google-generativeai/) (`gemini-2.5-flash`)
 *   **Database Matching**: `thefuzz` for intelligent string grouping
 *   **Image Processing**: `Pillow`
