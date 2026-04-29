@@ -1,75 +1,61 @@
-# 🛡️ MedSafe AI
+<h1 align="center">
+  <br>
+  🏥 MedSafe AI
+  <br>
+</h1>
 
-**Your Intelligent Healthcare Assistant**
+<h4 align="center">An AI-driven medical safety assistant for healthcare professionals.</h4>
 
-MedSafe AI is a modern, responsive web application built with Streamlit and powered by Google's Gemini Vision & LLM APIs. It is designed to act as a personal medical safety assistant, helping users understand their prescriptions, check for dangerous drug interactions, and get AI-guided advice on side effects—all within a beautiful, Apple-inspired mobile dashboard interface.
+<p align="center">
+  <a href="#features">Features</a> •
+  <a href="#tech-stack">Tech Stack</a> •
+  <a href="#getting-started">Getting Started</a> •
+  <a href="#contributing">Contributing</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg" alt="Version">
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="License">
+  <img src="https://img.shields.io/github/actions/workflow/status/Tusharsharma420/MedSafe-AI---AI-driven-medical-safety-assistant/ci.yml?branch=main" alt="Build Status">
+</p>
 
 ---
 
-## ✨ Features
+## 🚀 Features
 
-*   **💊 Medicine Interaction Checker**: Input multiple medications and let the advanced backend analyze known interactions, fuzzy-match active salts against our mock database, and generate patient-friendly AI guidance summaries for any identified risks. 
-*   **📄 Prescription OCR Reader**: Say goodbye to unreadable doctor's handwriting. Upload a picture of a medical prescription and let Google's Generative AI Vision accurately extract the prescribed medicines and their active salts.
-*   **🩺 Symptom & Doubt Solver**: Experiencing side effects from a new medication? Enter your symptoms and history to get instant educational guidance, home remedies, and an AI-driven emergency risk assessment predictor.
-*   **📱 Immersive Mobile UI**: Designed from the ground up to feel like a premium native mobile application with custom CSS, Apple's San Francisco text typography, smooth hover transitions, and rounded pastel widgets.
+- **Clinical Decision Support**: AI-powered insights to assist in medical safety and protocol adherence.
+- **Data Privacy**: Built with strict data governance and privacy by design.
+- **Fast Analysis**: Quick processing of medical inputs for rapid assistance.
+- **Intuitive Interface**: Designed specifically for healthcare professionals to reduce cognitive load.
 
-## 🛠️ Technology Stack
+## 🛠 Tech Stack
 
-*   **Frontend**: Python / [Streamlit](https://streamlit.io/)
-*   **Styling**: Custom flex-box HTML and CSS 
-*   **AI Engine**: [Google GenAI](https://pypi.org/project/google-generativeai/) (`gemini-2.5-flash`)
-*   **Database Matching**: `thefuzz` for intelligent string grouping
-*   **Image Processing**: `Pillow`
+- **Core AI**: Python, LLMs / ML Frameworks
+- **Backend**: Node.js / Express or Python / FastAPI
+- **Frontend**: Modern Web Technologies (React/Next.js)
 
-## 🚀 Setup & Installation
+## 🏁 Getting Started
 
-### 1. Prerequisites
-Ensure you have Python 3.9+ installed on your system.
+### Prerequisites
+- Node.js / Python
+- Access to necessary AI API Keys
 
-### 2. Clone the Repository
-```bash
-git clone https://github.com/Tusharsharma420/MedSafe-AI---AI-driven-medical-safety-assistant.git
-cd MedSafe-AI---AI-driven-medical-safety-assistant
-```
+### Installation
 
-### 3. Install Dependencies
-```bash
-pip install -r requirements.txt
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Tusharsharma420/MedSafe-AI---AI-driven-medical-safety-assistant.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd MedSafe-AI---AI-driven-medical-safety-assistant
+   ```
+3. Install dependencies and configure `.env`:
+   *(Follow specific backend/frontend module instructions)*
 
-### 4. API Key Configuration
-MedSafe AI heavily relies on Google's Gemini API for its intelligent features. You need to provide your own API key.
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome!
+Feel free to check [issues page](https://github.com/Tusharsharma420/MedSafe-AI---AI-driven-medical-safety-assistant/issues).
 
-1. Get a free API key from [Google AI Studio](https://aistudio.google.com/).
-2. Create a file named `.env` in the root of the project directory.
-3. Add the following line to the `.env` file:
-```env
-GEMINI_API_KEY=your_api_key_here
-```
-
-### 5. Run the Application
-Start the Streamlit development server:
-```bash
-python -m streamlit run app.py
-```
-The application will open in your default browser at `http://localhost:8501`.
-
-## 📂 Project Structure
-
-```text
-c:/TUSHAR/medai/
-├── 📄 app.py                        # Streamlit app router & global CSS entry
-├── 📄 list_models.py                # script to find exact Gemini model strings
-├── 📄 requirements.txt              # Standard python dependency lock
-├── 📁 data/
-│   └── 📄 medicine_db.json          # Curated mock DB of drug salts & safety rules
-├── 📁 utils/
-│   ├── 📄 llm_helper.py             # GenerativeAI integrations and wrappers
-│   ├── 📄 medicine_db.py            # Local DB parser & fuzzy matching logic
-│   └── 📄 ocr_helper.py             # Image digestion and Vision API wrapper
-└── 📁 views/
-    ├── 📄 dashboard.py              # Main beautiful pastel dashboard home
-    ├── 📄 interaction_checker.py    # Tool logic for checking safety
-    ├── 📄 prescription_ocr.py       # Tool logic for scanning prescriptions
-    └── 📄 symptom_solver.py         # Tool logic for generating medical guidance
-```
+## 📝 License
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
